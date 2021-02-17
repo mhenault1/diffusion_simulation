@@ -53,7 +53,8 @@ def plot_sim(sim):
 
 	cam = Camera(fig)
 
-	ylim = 1.1*np.abs(sim.max()) * np.array([-1,1])
+	ylim = 1.1*np.abs(sim).max() * np.array([-1,1])
+
 	ax0.set_facecolor('0.95')
 	ax0.set_xlabel(r'Temps $t$', size=20)
 	ax0.set_ylabel(r'Position $x$', size=20)
