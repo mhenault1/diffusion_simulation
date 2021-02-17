@@ -55,17 +55,17 @@ def plot_sim(sim):
 
 	ylim = 1.1*np.abs(sim.max()) * np.array([-1,1])
 	ax0.set_facecolor('0.95')
-	ax0.set_xlabel(r'Temps $t$ (secondes)', size=20)
+	ax0.set_xlabel(r'Temps $t$', size=20)
 	ax0.set_ylabel(r'Position $x$', size=20)
 	ax0.set_ylim(ylim)
 
 	ax1.set_facecolor('0.95')
-	ax1.set_xlabel(r'Temps $t$ (secondes)', size=20)
+	ax1.set_xlabel(r'Temps $t$', size=20)
 	ax1.set_ylabel(r'Moyenne $\overline{x}$', size=20)
 	ax1.set_ylim(ylim)
 
 	ax2.set_facecolor('0.95')
-	ax2.set_xlabel(r'Temps $t$ (secondes)', size=20)
+	ax2.set_xlabel(r'Temps $t$', size=20)
 	ax2.set_ylabel(r'Variance $\overline{x^2}$', size=20)
 
 	c = [cm.viridis(i) for i in np.linspace(0, 1, n_particules)]
